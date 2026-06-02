@@ -10,7 +10,7 @@ int main(){
 
     temp = n;
 
-    for( ; n > 0; n = n / 10)
+    while(n > 0)
     {
         rem = n % 10;
 
@@ -22,6 +22,8 @@ int main(){
         }
 
         sum = sum + fact;
+
+        n = n / 10;
     }
 
     if(sum == temp)
